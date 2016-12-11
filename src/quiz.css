@@ -1,0 +1,32 @@
+.correct, .incorrect {
+	text-align: center;
+	font-weight: bold;
+	color: green;
+}
+.incorrect{
+	color: red;
+}
+#replay{
+	display: none;
+	text-align: center;
+}
+
+#description {
+	text-align: center;
+	margin-bottom: 40px;
+	font-size: 20px;
+}
+#question {
+	text-align: center;
+	border-bottom-style: solid;
+	border-width: 1px;
+	padding-bottom: 20px;
+	border-color: black;
+}
+.answerChoices {
+	text-align: center;
+}
+.answerBtn, #playAgain {
+	width: 100%;
+	margin-bottom: 10px;
+}

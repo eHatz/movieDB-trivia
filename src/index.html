@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="./quiz.css">
+	<title></title>
+</head>
+<body>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h2 id="question"></h2>
+				<h3 id="description"></h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4 answerChoices">
+				<button class="btn btn-primary answerBtn" id="answerBtn1" value=""></button>
+			</div>
+			<div class="col-sm-4 answerChoices">
+				<button class="btn btn-primary answerBtn" id="answerBtn2" value=""></button>
+			</div>
+			<div class="col-sm-4 answerChoices">
+				<button class="btn btn-primary answerBtn" id="answerBtn3" value=""></button>
+			</div>
+		</div>
+		<div id="replay">
+			<div class="row">
+				<div class="col-sm-4 col-sm-offset-4">
+					<button class="btn btn-primary" id="playAgain">Play Again</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script 
+		src="https://code.jquery.com/jquery-3.1.1.min.js"
+		integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+		crossorigin="anonymous">
+	</script>
+	<script type="text/javascript" src="./data.js"></script>
+	<script type="text/javascript" src="./quiz.js"></script>
+</body>
+</html>
