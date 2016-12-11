@@ -1,9 +1,6 @@
-$.ajax({
-	url: "https://api.themoviedb.org/3/search/person?api_key=64e5b10f23e637069e620defbf214ddd&query=brad+pitt",
-	type: "GET",
-}).then((response) =>{
-	console.log(response.results[0].id)
-})
+//this quiz randomly pick a movie from the the actor's list, randomly selects a question to ask about the movie
+//and then randomly selects 2 other movies to add as incorrect answer choices
+
 var actor = 'Brad Pitt';
 var correctIndex;
 var incorrIndex1;
@@ -89,6 +86,8 @@ function createQuestion() {
 			$('#answerBtn'+ (i+1)).attr('value', answersArr[i]);
 		};
 	};
+
+//check answer submission
 $('.answerBtn').click(function() {
 	if (this.value === correctAnswer) {
 		$('#question').html('Correct!').attr('class', 'correct');
@@ -101,6 +100,8 @@ $('.answerBtn').click(function() {
 	}
 })
 };
+
+//play again button/reset game
 $('#playAgain').click(function() {
 	correctIndex = undefined;
 	incorrIndex1 = undefined;
